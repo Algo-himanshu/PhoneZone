@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-image {
+  position: relative;
+  background-image: url("/6.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+form {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 425px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* main.css or your styles file */
+
+.custom-icon-btn {
+  background-color: rgb(
+    232,
+    221,
+    221
+  ) !important; /* Add !important to override Bootstrap styles */
+}
+
+.custom-icon-btn:hover {
+  background-color: #333 !important; /* Change the hover color if needed */
+}
+
+.sign-btn {
+  background-color: rgb(129, 16, 178);
+  color: #fffefe;
+  padding: 10px 24px;
+  border-radius: 12px;
+}
+.sign-btn:hover {
+  background-color: rgb(112, 13, 154);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* css for active navbar */
+.navbarcss {
+  /* position: fixed; Fix the navbar to the top of the page */
+  font-size: 20px;
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it span the full width of the page */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+.navasctivecss {
+  font-weight: 700;
+}
+.nav-logout {
+  cursor: pointer;
+}
+/* .navasctivecss :hover {
+  color: white !important;
+} */
+
+/* carousal css */
+.carousal {
+  width: 95%;
+}
+
+.home-bg-image {
+  position: relative;
+  background-image: url("/homeAd.webp");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  margin-bottom: 70px;
+}
+
+.slide {
+  text-align: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  margin: none;
+  padding: none;
+}
+
+.image-container {
+  padding-bottom: 100px;
+}
+
+/* .image-container img {
+  width: 100%;
+  height: auto;
+} */
+
+.brand-name {
+  margin-top: 10px;
+}
+
+/* FilterSearch css*/
+
+.filter-section {
+  height: 100vh; /* 100% of the viewport height */
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 16px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
+.filter-section h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc; /* Add a 1px solid line under the h2 heading */
+  padding-bottom: 8px; /* Adjust the padding as needed */
+}
+
+/* card css */
+
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: end; Adjust as needed */
+
+/* .card {
+  width: 18rem;
+  margin: 50px; /* Adjust as needed */
+/* */
+
+/* styles.css */
+
+.search-container {
+  position: flex;
+}
+.mainBody {
+  background-color: rgb(228, 241, 255);
+}
+/* rgb(228, 241, 255); */
+.body {
+  background-color: black;
+}
+
+/* card css */
+
+.homeDisplay {
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  z-index: -1;
+}
+
+.phoneInfo {
+  width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 450px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f0f0f0;
+  height: 380px;
+}
+
+.imgdiv {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 220px;
+  height: 180px;
+}
+.imgdiv img {
+  position: relative;
+  right: 20px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 20px;
+  max-width: 100%; /* Increase or decrease this value based on your preference */
+  width: 220px;
+  height: 300px;
+}
+
+.deviceInfo {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.deviceInfo h1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.deviceDesc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.deviceDesc h6 {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.deviceDesc label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.descriptionItem {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.descriptionItem h6 {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+h3 {
+  position: absolute;
+  bottom: 45px;
+  flex-direction: column;
+}
+
+.skeleton-loading {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeleton-text {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsla(195, 3%, 71%, 0.938);
+  }
+  100% {
+    background-color: hsl(200, 0%, 95%);
+  }
+}
+/* @keyframes skeleton-loading {
+  0% {
+    background-color: hsla(199, 20%, 70%, 0.938);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+} */
+
+.skeleton-text {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.skeleton-model-name {
+  margin-top: 20px;
+}
+
+.skeleton {
+  width: 300px;
+}
+.skeleton-text-price {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+.custom-select {
+  /* Customize the appearance of the select element here */
+  padding: 5px; /* Adjust the padding to make it smaller */
+  border: 0; /* Remove the border */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  background-color: #f0f0f0; /* Set background color */
+  color: #333; /* Set text color */
+}
+
+.brands {
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brandName {
+  font-weight: bold;
+  border-width: 0px;
+  width: 10%;
+  height: 40px;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+.brandName:hover {
+  border-width: 3px;
+  color: rgb(148, 0, 255);
+}
+.dashboard-content {
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+.profilePic {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px solid black;
+  overflow: hidden;
+  cursor: pointer;
+}
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userName,
+.email,
+.phoneNumber {
+  margin-top: 25px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 700px;
+  border-radius: 90px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.displayInfo {
+  margin-top: 100px;
+
+  padding-bottom: 50px; /* Optional: Add some padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.settingContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.headerr {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.setting {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cardd {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cardd:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 18px;
+}
+/* styles/globals.css */
+
+.profilePic {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The overlay class applies to the background overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+/* The profile-modal class applies to the modal content */
+.profile-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-modal .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.profile-modal h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-modal input[type="file"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-modal button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-modal button:hover {
+  background-color: #0056b3;
+}
+
+.add-address-container {
+  padding-top: 600px; /* Adjust based on your navbar height */
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  overflow-y: auto;
+}
+
+.add-address-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.address-form {
+  padding-top: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.address-form label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.address-form input {
+  border: 1px solid black;
+  height: 30px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.address-form select {
+  border: 1px solid black;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.address-form .default-address-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.address-form .default-address-label input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.address-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.address-form button:hover {
+  background-color: #0056b3;
+}
+.address-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.addres-container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns per row */
+  gap: 16px; /*Space between cards */
+  justify-items: center; /* Center align cards in each grid cell */
+  background-color: #ffffff;
+}
+
+.car {
+  border: 1px #ccc solid;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%; /* Make card take full width of its grid cell */
+  /*max-width: 320px;  Max width for the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: #d70c0c 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.car:hover {
+  background-color: #efeeee;
+}
+
+.car h2 {
+  padding-top: 25%;
+  text-align: center;
+}
+.car p {
+  margin: 4px 0;
+}
+.keyName {
+  padding: 0%;
+  text-align: center;
+  font-weight: bold;
+}
+.line {
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.car h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.car .key {
+  font-weight: bold;
+}
+
+.car .value {
+  margin-bottom: 10px;
+}
