@@ -66,7 +66,7 @@ function dashboard() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dashboard-contentt">
       <div className="dashboard-content">
         <div className="displayInfo">
           <div className="d-flex flex-row bd-highlight mb-3">
