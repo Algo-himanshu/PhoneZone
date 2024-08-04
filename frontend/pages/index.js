@@ -5,6 +5,8 @@ import Card from "../public/components/Card";
 import Brands from "../public/components/Brands";
 import Carousel from "../public/components/Carousel";
 import { FetchCarousalData } from "../public/helpers/FetchCarousalData";
+import PhoneCategories from "../public/components/PhoneCategories";
+import Offers from "../public/components/Offers";
 
 const Home = () => {
   const [state] = useContext(userContext);
@@ -27,6 +29,7 @@ const Home = () => {
       }
     };
     getcData();
+
     const fetchData = async () => {
       try {
         let response;
@@ -55,11 +58,13 @@ const Home = () => {
 
   if (state && state.token)
     return (
-      <div>
+      <div className="mainIndexCss">
         <Brands onBrandClick={handleBrandClick} />
         <div className="container-fluid home-bg-image"></div>
-        <Carousel data={carouselData} />
-        <Card searchResults={homeData} flag={false} page={"index"} />
+        <div className="container-fluid second-home-bg-image"></div>
+        <Offers /> <Carousel data={carouselData} />
+        {/* <Card searchResults={homeData} flag={false} page={"index"} /> */}
+        <PhoneCategories />
       </div>
     );
 };

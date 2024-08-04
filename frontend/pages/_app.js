@@ -5,6 +5,7 @@ import "../main.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import Footer from "../public/components/Footer";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -20,6 +21,7 @@ function App({ Component, pageProps }) {
           <ToastContainer position="top-center" />
           <Component {...pageProps} />
         </div>
+        <Footer />
       </UserProvider>
     </>
   );
